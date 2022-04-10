@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UCB-stat-159-s22/hw05-WenhaoP/HEAD?labpath=index.ipynb)
+
 ## Fine-tuning reproduciblity of LIGO Black Hole signal tutorial
 
 ** Add Binder badge and link here**
