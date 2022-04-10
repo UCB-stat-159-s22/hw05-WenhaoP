@@ -96,7 +96,7 @@ def read_frame(filename, ifo, readstrain=True):
     injnamelist     = [name.split(':')[1] for name in injnamelist_bit]
 
     return strain, gpsStart, ts, qmask, shortnameList, injmask, injnamelist
-    
+
 def read_hdf5(filename, readstrain=True):
     """
     Helper function to read HDF5 files
@@ -215,7 +215,7 @@ def dq2segs(channel, gps_start):
     t0 = gps_start
     segList = [(int(seg.start+t0), int(seg.stop+t0)) for seg in segments]
     return SegmentList(segList)
-    
+
 def dq_channel_to_seglist(channel, fs=4096):
     """
     WARNING: 
@@ -313,7 +313,7 @@ class FileList():
             return None
         else:
             return filenamelist[0]
-            
+
 def getstrain(start, stop, ifo, filelist=None):
     """
     START should be the starting gps time of the data to be loaded.
@@ -404,7 +404,7 @@ class SegmentList():
         return iter(self.seglist)
     def __getitem__(self, key):
         return self.seglist[key]
-       
+
 def getsegs(start, stop, ifo, flag='DATA', filelist=None):
     """
     Method for constructing a segment list from 
